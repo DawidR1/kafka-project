@@ -6,6 +6,7 @@
     <modules>
         <module>kafka-model</module>
         <module>producer</module>
+        <module>kafka-streams</module>
     </modules>
     <groupId>pl.dawid</groupId>
     <artifactId>kafka</artifactId>
