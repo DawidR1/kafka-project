@@ -20,7 +20,7 @@ public class UserKafkaStreamMain {
     private static final Logger logger = LoggerFactory.getLogger(UserKafkaStreamMain.class.getName());
 
     public static void main(String[] args) {
-        var properties = PropertiesFactory.getDefaultProperties("person-kafka-streams-app", String(), String());
+        var properties = PropertiesFactory.getDefaultProperties("user-kafka-streams-app", String(), String());
         var streamBuilder = new StreamsBuilder();
         KStream<String, String> stream = streamBuilder.stream(Mappings.USER_GENERAL_TOPIC);
         KStream<String, User> userStream = stream
